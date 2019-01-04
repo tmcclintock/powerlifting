@@ -2,9 +2,9 @@
 Implementations of the scoring system released by the IPF in 2019.
 """
 
-from math import log
+from numpy import log
 
-class IPF(object):
+class ipf(object):
     """
     IPF points released in 2019.
     """
@@ -69,6 +69,6 @@ class IPF(object):
         return 500 + 100*(total-C1*log(bodyweight)+C2)/(C3*log(bodyweight)-C4)
 
 if __name__ == "__main__":
-    MRSBD = IPF("M", "Raw", "SBD")
+    MRSBD = ipf("M", "Raw", "SBD")
     print(MRSBD.score(200, 1000, in_pounds=True))
 
