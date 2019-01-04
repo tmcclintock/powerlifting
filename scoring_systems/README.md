@@ -1,0 +1,1 @@
+Powerlifting as a sport has employed different scoring systems at different times. This directory contains implementations of various systems for ease of use.
